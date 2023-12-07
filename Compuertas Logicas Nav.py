@@ -12,7 +12,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 800, 450) # (x, y, ancho, alto)
         self.show() # Muestra la ventana
 
-app = QApplication(sys.argv) # Crea un objeto de tipo QApplication
-QApplication.setApplicationName('Simulador de Compuertas Logicas')
-window = MainWindow() # Crea un objeto de tipo MainWindow
-app.exec_() # Ejecuta la aplicacion
+def main():
+    app = QApplication(sys.argv) # Crea un objeto de tipo QApplication
+    window = MainWindow() # Crea un objeto de tipo MainWindow
+    app.exec_() # Ejecuta la aplicación    
